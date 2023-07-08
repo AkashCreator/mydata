@@ -52,3 +52,12 @@ df3
 df4=df1.groupby('Sex',maintain_order=True).mean().select(['Sex','Age'])
 df4
 
+
+# COMMAND ----------
+
+df5=df1.filter((po.col('Sex')=='male')&(po.col('Age')>20))
+df5
+
+# COMMAND ----------
+
+
