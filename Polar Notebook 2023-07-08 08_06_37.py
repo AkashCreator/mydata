@@ -60,4 +60,9 @@ df5
 
 # COMMAND ----------
 
+df6=df.groupby('Sex').sum().select('Sex','Fare').rename({'Fare':'Total Fare'})
+df6
+
+# COMMAND ----------
+
 
